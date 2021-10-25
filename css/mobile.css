@@ -1,0 +1,139 @@
+@media screen and (max-width: 480px) {
+    @import
+url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+/* MENU: NAVBAR/HEADER */
+
+nav {
+  background-color: #222222;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 10px;
+  list-style-type: none;
+  display:flex;
+  text-align: center;
+  font-size: 3vh;
+}
+
+nav ul li{
+  
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+nav ul li a{
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 100;
+  width: 100%;
+  display: block; 
+  text-align: center;
+  padding: 10px 0;
+}
+nav ul li a:hover{
+  background-color: rgba(213, 151, 65, 0.3) ;
+}
+
+/* SECTION MAIN IMAGE */
+
+#section-main-image {
+  height: 90vh;/*habia que usar vh = view high, usa la cantidad de pantalla ej 50vh es la mitad del contenedor*/
+  width: 480px;
+  background: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;/*deberia haber usado flex, justify y flex direction*/
+}
+
+#section-main-image h1 {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+#section-main-image h2{
+  font-size: 13px;
+  color: #eeeeee;
+  text-shadow:  2px 5px #000;
+}
+
+/* SECTION COFFEE */
+
+#section-coffee {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+div h2{
+  margin: 40px 0 20px 0;/*aca era 40px 0 20px 0 esto se usa arriba derecha abajo izquierda*/
+}
+#section-coffee p{
+  text-align: justify;/*tenia que usar text-align: justify;*/
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  padding: 0px 15px;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* FOOTER CONTACT */
+
+#footer-contact {
+  background-color: #58462c;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+#footer-contact .contact-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form form {
+  margin-left: 30px;
+  text-align: right;
+}
+
+.contact-form form .form-control {
+  padding: 10px 0;
+}
+
+.contact-form form .form-control label {
+  margin-right: 15px;
+}
+
+.contact-form form button {
+  margin-top: 15px;
+  color: #58462c;
+  padding: 2px 30px;
+}
+    
+}
